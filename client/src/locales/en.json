@@ -1,0 +1,22 @@
+{
+    "languageNames":{
+        "en": "English",
+        "es": "Spanish"
+    },
+    "inicio":"Home",
+    "historial":"History",
+    "espera":"Queue",
+
+    "tickets":"TICKETS",
+    "totales":"",
+    "ver-conteo":"Watch ticket count",
+    "tiempo-real":" in real time",
+    "espere": "Wait a momment...",
+    "horario": "Schedule",
+    "inicio-tickets": "Starts at: ",
+    "restantes": "REMAINING",
+    "personas1": "There's ",
+    "personas2": " people at the queue",
+    
+    "f":"They didn't code me :("
+}

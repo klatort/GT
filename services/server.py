@@ -16,6 +16,7 @@ class TicketApp:
     def register_routes(self):
         self.app.add_url_rule("/horario", "horario", self.horario, methods=["POST"])
         self.app.add_url_rule("/tickets", "ticket", self.ticket)
+        self.app.add_url_rule("/cupos", "cupos", self.cupos)
         self.app.add_url_rule("/members", "members", self.members)
         self.app.add_url_rule("/personas", "personas", self.personas)
 
@@ -48,6 +49,18 @@ class TicketApp:
             return {"tickets": "Se acabaron"}
         else:
             return {"tickets": self.tickets}
+    
+    def cupos(self):
+        
+        current_time = datetime.datetime.now().time().hour
+        if current_time < 8 and current_time > 5:
+            return  {"horario": ["Desayuno" , "7:00 a.m."]}
+        elif current_time >= 8 and current_time < 17:
+            return {"horario": ["Almuerzo" if arg != 'en' else "Lunch", "8:00 a.m."]}
+        elif current_time <= 18 and current_time >= 17:
+            return {"horario": ["Cena" if arg != 'en' else "Dinner", "5:00 p.m."]}
+        else:
+            return {"horario": ["No disponible", "mañana"]}
     
     def members(self):
         return {"members": ["Member1", "Member2", "Member3"]}

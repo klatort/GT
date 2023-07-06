@@ -1,0 +1,22 @@
+{
+    "languageNames":{
+        "en": "Inglés",
+        "es": "Español"
+    },
+    "inicio":"inicio",
+    "historial":"Historial",
+    "espera":"Espera",
+
+    "tickets":"TICKETS",
+    "totales":"TOTALES",
+    "ver-conteo":"Ver conteo en",
+    "tiempo-real":"tiempo real",
+    "espere": "Espere un momento...",
+    "horario": "Horario",
+    "inicio-tickets": "Inicio: ",
+    "restantes": "RESTANTES",
+    "personas1": "Hay ",
+    "personas2": " personas en cola",
+    
+    "f":"No me implementaron :("
+}
